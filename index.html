@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills&Hobbies</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Tessa Kong</h1>
+            </div>
+            <img src="profile/17.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+            <div class="profile-card">
+                <p class="summary">
+                    Tessa Kong is a highly skilled data scientist with expertise in machine learning, cloud computing, and deep learning applications. She has a strong academic background in health informatics and data science, complemented by hands-on experience in developing advanced models for ad bidding strategies and EEG signal processing. Tessa has demonstrated her ability to deliver impactful results through her internships and projects, showcasing her proficiency in Python, TensorFlow, and cloud technologies.
+                </p>
+            </div>
+        </section>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/yiting-kong" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="mailto:job.tessakong@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            <a href="tel:+12037065973" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+        </div>
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container">
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2025 (Expected)</div>
+                        <div class="timeline-content">
+                            <h3>M.S. in Health Informatics, Engineering Track</h3>
+                            <span>Yale University<br></span>
+                            <p><br></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2023</div>
+                        <div class="timeline-content">
+                            <h3>B.E. in Data Science and Big Data Technology</h3>
+                            <span>Xi’an Jiaotong-Liverpool University (XJTLU)<br></span>
+                            <p><br></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container">
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2024 – August 2024</div>
+                        <div class="timeline-content">
+                            <h3>Machine Learning Intern</h3>
+                            <span>TapTap<br></span>
+                            <p>Developed ESMM model to estimate CVR, with feature engineering of 68 new features addressing inference latency. Collaborated with senior engineers to deploy model, launching 90% traffic going live in 2 weeks, resulting in a 30% reduction in bias and 24.7% in over-reception ratio, a 3.5% increase in CVR and 4.2% in ARPU. Participated in the development of a PLTV model, defined labels based on partial observation window, processed samples and optimized ZILN loss, achieving ROI increase of 42.3%. Routinely adjusted bidding strategies to manage traffic flow, mitigated abnormal channel activity, developed functions.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2022 – September 2022</div>
+                        <div class="timeline-content">
+                            <h3>Research Intern</h3>
+                            <span>Stevens Institute of Technology<br></span>
+                            <p>Orchestrated a Python pipeline using MNE-Python for EEG preprocessing, incorporating high-frequency auto-filtering and multitaper spectral estimation, achieving a 23% noise reduction. Implemented a baseline experiment by employing FieldTrip and Signal Processing to visualize and extract three types of HFO (Ripples, Fast-Ripples, and Spikes) using MATLAB. Transformed 1D EEG signal vector into 2D by integrating channel position information and developed a CNN integrated with depthwise-convolution Transformer, achieving a sensitivity increase of 9%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="hidden">
+            <h2>Skills & Hobbies</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Python</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>RStudio</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-robot"></i>
+                        <span>PyTorch</span>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3>Hobbies</h3>
+                    <div class="skill">
+                        <i class="fa-solid fa-person-hiking"></i>
+                        <span>Hiking</span>
+                        <div class="progress-bar hobby"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-cat"></i>
+                        <span>Cats</span>
+                        <div class="progress-bar hobby"><div class="progress" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>Photography</span>
+                        <div class="progress-bar hobby"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Deep Learning based Recommender System</h3>
+                    <span class="project-date">October 2022 – January 2023</span>
+                    <ul class="project-list">
+                        <li><i class="fa-solid fa-truck"></i> Engineered NCF model for item recall and DIEN model for ranking to improve CTR.</li>
+                        <li><i class="fa-solid fa-chart-pie"></i> Leveraged Flask to develop the system back-end, implemented 15+ RESTful APIs.</li>
+                        <li><i class="fa-solid fa-coins"></i> Utilized MySQL as primary database, employed index and partition and implemented full-text search capabilities, used Redis as a caching layer to optimize loading efficiency.</li>
+                    </ul>
+                    <br>
+                    <div class="techniques">
+                        <span class="technique-tag">TensorFlow</span>
+                        <span class="technique-tag">Flask</span>
+                        <span class="technique-tag">MySQL</span>
+                        <span class="technique-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Scalable Cloud Infra for ML Classification</h3>
+                    <span class="project-date">March 2023 – May 2023</span>
+                    <ul class="project-list">
+                        <li><i class="fa-solid fa-bullhorn"></i> Devised and optimized Spark MLlib classifiers for a 10-feature dataset comprising over 1,000,000 samples, achieving an accuracy of 92% and completing the processing within 2 minutes.</li>
+                    </ul>
+                    <br>
+                    <div class="techniques">
+                        <span class="technique-tag">Spark MLlib</span>
+                        <span class="technique-tag">OSS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Mini-TikTok</h3>
+                    <span class="project-date">April 2022 – July 2022</span>
+                    <ul class="project-list">
+                        <li><i class="fa-solid fa-bullhorn"></i> Utilized GORM with MySQL relational database ensure efficient operations and Gin for HTTP services.</li>
+                        <li><i class="fa-solid fa-magnifying-glass-chart"></i> Strengthened security with JWT authentication and MD5 password encryption.</li>
+                        <li><i class="fa-solid fa-chart-bar"></i> Implemented S3 for video storage and slice upload functionality.</li>
+                    </ul>
+                    <br>
+                    <div class="techniques">
+                        <span class="technique-tag">Golang</span>
+                        <span class="technique-tag">Gin</span>
+                        <span class="technique-tag">GORM</span>
+                        <span class="technique-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Kaggle(Top1%)</h3>
+                    <span class="project-date">February 2022 – May 2022</span>
+                    <p>Designed a ranking model based on SAR, achieving the final score of 0.02823(MAP); ranked 62/2954 and won the silver medal.</p>
+                    <div class="techniques">
+                        <span class="technique-tag">NumPy</span>
+                        <span class="technique-tag">Pandas</span>
+                        <span class="technique-tag">sklearn</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+</html>
